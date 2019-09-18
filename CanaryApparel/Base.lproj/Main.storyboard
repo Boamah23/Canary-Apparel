@@ -9,62 +9,7 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Pacifico-Regular.ttf">
-            <string>Pacifico-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
-        <!--Home-->
-        <scene sceneID="hNz-n2-bh7">
-            <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="CanaryApparel" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canary" translatesAutoresizingMaskIntoConstraints="NO" id="9zV-ns-XEY">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000045"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31W-oS-SaG">
-                                <rect key="frame" x="23" y="229" width="369" height="226"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="226" id="kav-Yg-mJS"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="369" id="x67-6y-602"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="116"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APPAREL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxc-zK-e7J">
-                                <rect key="frame" x="172" y="389" width="161" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="zxc-zK-e7J" secondAttribute="trailing" constant="81" id="4cr-Hj-dn2"/>
-                            <constraint firstItem="31W-oS-SaG" firstAttribute="leading" secondItem="9zV-ns-XEY" secondAttribute="leading" constant="23" id="9Ud-hq-Stt"/>
-                            <constraint firstItem="9zV-ns-XEY" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="DgA-RP-7qp"/>
-                            <constraint firstItem="31W-oS-SaG" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="23" id="MfW-Bs-4iv"/>
-                            <constraint firstItem="31W-oS-SaG" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="185" id="Uya-po-QP2"/>
-                            <constraint firstItem="zxc-zK-e7J" firstAttribute="top" secondItem="31W-oS-SaG" secondAttribute="bottom" constant="-66" id="ZZr-fj-kBf"/>
-                            <constraint firstItem="9zV-ns-XEY" firstAttribute="centerY" secondItem="zxc-zK-e7J" secondAttribute="centerY" constant="35.5" id="dTZ-to-Fxe"/>
-                            <constraint firstItem="9zV-ns-XEY" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="nwh-M2-6Zp"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="31W-oS-SaG" secondAttribute="trailing" symbolic="YES" id="oJO-DS-4fL"/>
-                            <constraint firstItem="zxc-zK-e7J" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="172" id="pqy-t9-2LI"/>
-                            <constraint firstAttribute="trailing" secondItem="9zV-ns-XEY" secondAttribute="trailing" id="xpu-ew-8gB"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="icons8-a_home" id="acW-dT-cKf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-749.27536231884062" y="726.5625"/>
-        </scene>
         <!--Search-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -211,7 +156,6 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="3t2-sh-gAL" kind="relationship" relationship="viewControllers" id="8b1-mH-ITF"/>
                         <segue destination="bMG-2g-DmH" kind="relationship" relationship="viewControllers" id="gGt-Qr-603"/>
@@ -240,8 +184,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="canary" width="2124" height="2940"/>
-        <image name="icons8-a_home" width="25" height="25"/>
         <image name="icons8-like" width="25" height="25"/>
         <image name="icons8-search_filled" width="25" height="25"/>
         <image name="icons8-shopping_cart" width="25" height="25"/>

@@ -1,19 +1,62 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pacifico-Regular.ttf">
+            <string>Pacifico-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canary" translatesAutoresizingMaskIntoConstraints="NO" id="rHD-hK-wGc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APPAREL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpE-UL-r9O">
+                                <rect key="frame" x="171" y="402" width="161" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkI-oh-nLq">
+                                <rect key="frame" x="12" y="241" width="390" height="226"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="226" id="rOm-qw-N0m"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="369" id="spd-tt-j7w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="116"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GkI-oh-nLq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="197" id="0jm-1e-9xj"/>
+                            <constraint firstItem="GkI-oh-nLq" firstAttribute="centerX" secondItem="rHD-hK-wGc" secondAttribute="centerX" id="Eiq-yi-Kxl"/>
+                            <constraint firstItem="rHD-hK-wGc" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="He2-L1-qm1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GkI-oh-nLq" secondAttribute="trailing" constant="12" id="M8l-mi-64Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tpE-UL-r9O" secondAttribute="trailing" constant="82" id="OVe-h0-iUu"/>
+                            <constraint firstItem="rHD-hK-wGc" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="QgX-Kf-XTq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tpE-UL-r9O" secondAttribute="bottom" constant="413" id="Rd3-K6-AAY"/>
+                            <constraint firstItem="rHD-hK-wGc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Rle-IE-kDi"/>
+                            <constraint firstItem="GkI-oh-nLq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hTs-HY-IS0"/>
+                            <constraint firstItem="tpE-UL-r9O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="171" id="heA-DS-Pth"/>
+                            <constraint firstItem="tpE-UL-r9O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="358" id="ku0-HO-FDg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +65,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="canary" width="2124" height="2940"/>
+    </resources>
 </document>
