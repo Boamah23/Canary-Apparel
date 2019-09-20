@@ -80,6 +80,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA3B718823357ACD0081DB65 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		EAA353DF23341692004A4D9C = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +111,7 @@
 		EAA353EA23341693004A4D9C /* CanaryApparel */ = {
 			isa = PBXGroup;
 			children = (
+				EA3B718823357ACD0081DB65 /* New Group */,
 				EAA3541B233418B7004A4D9C /* Fonts */,
 				EAA353EB23341693004A4D9C /* AppDelegate.swift */,
 				EAA353ED23341693004A4D9C /* FirstViewController.swift */,
