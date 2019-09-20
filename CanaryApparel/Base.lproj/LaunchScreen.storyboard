@@ -23,46 +23,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canary" translatesAutoresizingMaskIntoConstraints="NO" id="rHD-hK-wGc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canary" translatesAutoresizingMaskIntoConstraints="NO" id="7TA-kQ-MDL">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APPAREL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpE-UL-r9O">
-                                <rect key="frame" x="171" y="402" width="161" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5i-qs-J4W">
+                                <rect key="frame" x="30" y="252" width="354" height="207"/>
+                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="109"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkI-oh-nLq">
-                                <rect key="frame" x="12" y="241" width="390" height="226"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="226" id="rOm-qw-N0m"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="369" id="spd-tt-j7w"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="116"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APPAREL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98J-9C-Jm1">
+                                <rect key="frame" x="156" y="394" width="199" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GkI-oh-nLq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="197" id="0jm-1e-9xj"/>
-                            <constraint firstItem="GkI-oh-nLq" firstAttribute="centerX" secondItem="rHD-hK-wGc" secondAttribute="centerX" id="Eiq-yi-Kxl"/>
-                            <constraint firstItem="rHD-hK-wGc" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="He2-L1-qm1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GkI-oh-nLq" secondAttribute="trailing" constant="12" id="M8l-mi-64Y"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tpE-UL-r9O" secondAttribute="trailing" constant="82" id="OVe-h0-iUu"/>
-                            <constraint firstItem="rHD-hK-wGc" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="QgX-Kf-XTq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tpE-UL-r9O" secondAttribute="bottom" constant="413" id="Rd3-K6-AAY"/>
-                            <constraint firstItem="rHD-hK-wGc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Rle-IE-kDi"/>
-                            <constraint firstItem="GkI-oh-nLq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="hTs-HY-IS0"/>
-                            <constraint firstItem="tpE-UL-r9O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="171" id="heA-DS-Pth"/>
-                            <constraint firstItem="tpE-UL-r9O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="358" id="ku0-HO-FDg"/>
+                            <constraint firstItem="7TA-kQ-MDL" firstAttribute="centerX" secondItem="K5i-qs-J4W" secondAttribute="centerX" id="2ZO-Jq-OPz"/>
+                            <constraint firstItem="7TA-kQ-MDL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="4eO-oX-eTD"/>
+                            <constraint firstItem="K5i-qs-J4W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="208" id="A5S-vh-MeF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="98J-9C-Jm1" secondAttribute="trailing" constant="59" id="FLv-Cw-tfC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K5i-qs-J4W" secondAttribute="bottom" constant="403" id="Tvd-sH-a4N"/>
+                            <constraint firstItem="K5i-qs-J4W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="UrZ-XR-NE4"/>
+                            <constraint firstItem="7TA-kQ-MDL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eBe-Bw-AtY"/>
+                            <constraint firstItem="98J-9C-Jm1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="eeW-8E-rXE"/>
+                            <constraint firstItem="K5i-qs-J4W" firstAttribute="bottom" secondItem="98J-9C-Jm1" secondAttribute="bottom" constant="9" id="hRZ-Jf-PmO"/>
+                            <constraint firstItem="7TA-kQ-MDL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="hpY-0u-ICb"/>
+                            <constraint firstItem="98J-9C-Jm1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="350" id="yYT-4k-yz9"/>
+                            <constraint firstAttribute="trailing" secondItem="7TA-kQ-MDL" secondAttribute="trailing" id="yg0-YG-AQq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>

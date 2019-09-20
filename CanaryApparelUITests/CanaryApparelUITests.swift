@@ -2,7 +2,7 @@
 //  CanaryApparelUITests.swift
 //  CanaryApparelUITests
 //
-//  Created by nathan boamah on 18/09/2019.
+//  Created by nathan boamah on 19/09/2019.
 //  Copyright © 2019 nathan boamah. All rights reserved.
 //
 
