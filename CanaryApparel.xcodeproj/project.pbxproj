@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA3B718B23357C000081DB65 /* FavouritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B718A23357C000081DB65 /* FavouritesTableViewCell.swift */; };
+		EA3B718D23357C160081DB65 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B718C23357C160081DB65 /* CartTableViewCell.swift */; };
+		EA3B718F23357C2E0081DB65 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B718E23357C2E0081DB65 /* AccountTableViewCell.swift */; };
+		EA3B719123357CA00081DB65 /* SignUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B719023357CA00081DB65 /* SignUpTableViewCell.swift */; };
+		EA3B719323357CB90081DB65 /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B719223357CB90081DB65 /* SignInTableViewCell.swift */; };
 		EAA353EC23341693004A4D9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA353EB23341693004A4D9C /* AppDelegate.swift */; };
 		EAA353EE23341693004A4D9C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA353ED23341693004A4D9C /* FirstViewController.swift */; };
 		EAA353F023341693004A4D9C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA353EF23341693004A4D9C /* SecondViewController.swift */; };
@@ -37,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA3B718A23357C000081DB65 /* FavouritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewCell.swift; sourceTree = "<group>"; };
+		EA3B718C23357C160081DB65 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		EA3B718E23357C2E0081DB65 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		EA3B719023357CA00081DB65 /* SignUpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewCell.swift; sourceTree = "<group>"; };
+		EA3B719223357CB90081DB65 /* SignInTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInTableViewCell.swift; sourceTree = "<group>"; };
 		EAA353E823341693004A4D9C /* CanaryApparel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanaryApparel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA353EB23341693004A4D9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAA353ED23341693004A4D9C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -80,13 +90,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EA3B718823357ACD0081DB65 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		EAA353DF23341692004A4D9C = {
 			isa = PBXGroup;
 			children = (
@@ -111,10 +114,14 @@
 		EAA353EA23341693004A4D9C /* CanaryApparel */ = {
 			isa = PBXGroup;
 			children = (
-				EA3B718823357ACD0081DB65 /* New Group */,
 				EAA3541B233418B7004A4D9C /* Fonts */,
 				EAA353EB23341693004A4D9C /* AppDelegate.swift */,
 				EAA353ED23341693004A4D9C /* FirstViewController.swift */,
+				EA3B718A23357C000081DB65 /* FavouritesTableViewCell.swift */,
+				EA3B718C23357C160081DB65 /* CartTableViewCell.swift */,
+				EA3B718E23357C2E0081DB65 /* AccountTableViewCell.swift */,
+				EA3B719023357CA00081DB65 /* SignUpTableViewCell.swift */,
+				EA3B719223357CB90081DB65 /* SignInTableViewCell.swift */,
 				EAA353EF23341693004A4D9C /* SecondViewController.swift */,
 				EAA353F123341693004A4D9C /* Main.storyboard */,
 				EAA353F423341695004A4D9C /* Assets.xcassets */,
@@ -283,9 +290,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA3B719123357CA00081DB65 /* SignUpTableViewCell.swift in Sources */,
 				EAA353F023341693004A4D9C /* SecondViewController.swift in Sources */,
 				EAA353EC23341693004A4D9C /* AppDelegate.swift in Sources */,
+				EA3B718D23357C160081DB65 /* CartTableViewCell.swift in Sources */,
+				EA3B718F23357C2E0081DB65 /* AccountTableViewCell.swift in Sources */,
 				EAA353EE23341693004A4D9C /* FirstViewController.swift in Sources */,
+				EA3B718B23357C000081DB65 /* FavouritesTableViewCell.swift in Sources */,
+				EA3B719323357CB90081DB65 /* SignInTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
