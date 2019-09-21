@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>237206090611-rk9m4qd9ps1ibg2k2cmi9i1ufs2c5rj5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.237206090611-rk9m4qd9ps1ibg2k2cmi9i1ufs2c5rj5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD6UVjTwHrlCrYOuD85o22JXCGEHF8lmpk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>237206090611</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.canary.CanaryApparel</string>
+	<key>PROJECT_ID</key>
+	<string>canary-apparel</string>
+	<key>STORAGE_BUCKET</key>
+	<string>canary-apparel.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:237206090611:ios:303f46690df932d8514b06</string>
+	<key>DATABASE_URL</key>
+	<string>https://canary-apparel.firebaseio.com</string>
+</dict>
+</plist>

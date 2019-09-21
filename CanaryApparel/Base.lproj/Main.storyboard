@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canary1" translatesAutoresizingMaskIntoConstraints="NO" id="cQL-t8-8Mg">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000045"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0sc-lq-C9b">
                                 <rect key="frame" x="40" y="319" width="334" height="196"/>
@@ -179,7 +179,7 @@
         <!--Favourites-->
         <scene sceneID="aje-cy-XP7">
             <objects>
-                <viewController id="IJA-cQ-M4G" sceneMemberID="viewController">
+                <viewController id="IJA-cQ-M4G" customClass="FavouritesViewController" customModule="CanaryApparel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vSB-rW-ySe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,7 +195,7 @@
         <!--Cart-->
         <scene sceneID="q0T-qP-mff">
             <objects>
-                <viewController id="tPq-48-u7j" sceneMemberID="viewController">
+                <viewController id="tPq-48-u7j" customClass="CartViewController" customModule="CanaryApparel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="svJ-y9-8un">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,7 +218,7 @@
         <!--Account-->
         <scene sceneID="RuW-Sv-2pW">
             <objects>
-                <viewController id="fWJ-CF-h6x" sceneMemberID="viewController">
+                <viewController id="fWJ-CF-h6x" customClass="AccountViewController" customModule="CanaryApparel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wxk-Ua-qTc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,16 +231,16 @@
             </objects>
             <point key="canvasLocation" x="2543" y="731"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="CRw-r2-kzS">
             <objects>
-                <viewController id="GUP-oy-XW6" sceneMemberID="viewController">
+                <viewController id="GUP-oy-XW6" customClass="SignInViewController" customModule="CanaryApparel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zHL-Mt-zhB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9py-AV-SnM">
-                                <rect key="frame" x="87" y="63" width="240.00000000000023" height="128"/>
+                                <rect key="frame" x="87" y="63" width="240" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce6-hX-691">
                                 <rect key="frame" x="128" y="228" width="158" height="20.5"/>
@@ -269,10 +269,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsg-Yl-D71">
                                         <rect key="frame" x="0.0" y="160" width="334" height="30"/>
                                         <state key="normal" title="FORGOT PASSWORD?"/>
+                                        <connections>
+                                            <action selector="forgotPasswordTapped:" destination="GUP-oy-XW6" eventType="touchUpInside" id="vR9-1f-kqQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9v-m1-26q">
                                         <rect key="frame" x="0.0" y="230" width="334" height="30"/>
                                         <state key="normal" title="LOGIN"/>
+                                        <connections>
+                                            <action selector="loginTapped:" destination="GUP-oy-XW6" eventType="touchUpInside" id="Ozz-c4-fD2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -296,15 +302,21 @@
                         <viewLayoutGuide key="safeArea" id="SlG-cq-v0D"/>
                     </view>
                     <navigationItem key="navigationItem" id="DWO-u1-J4a"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="rVa-qq-uOp" id="Iwz-FZ-yv9"/>
+                        <outlet property="forgotPasswordButton" destination="lsg-Yl-D71" id="7tm-Fq-seO"/>
+                        <outlet property="loginButton" destination="G9v-m1-26q" id="cS2-vF-9OH"/>
+                        <outlet property="passwordTextField" destination="ioy-Jv-lMj" id="KHx-Ag-fKe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ldg-UD-qzq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1830.4347826086957" y="1460.4910714285713"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="6oa-UT-HZ6">
             <objects>
-                <viewController id="6GR-Kb-coT" sceneMemberID="viewController">
+                <viewController id="6GR-Kb-coT" customClass="SignUpViewController" customModule="CanaryApparel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pBN-oq-1yV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -316,7 +328,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8XM-Vl-m9T">
-                                <rect key="frame" x="87" y="63" width="240.00000000000023" height="128"/>
+                                <rect key="frame" x="87" y="63" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="8FE-qN-TgT"/>
                                 </constraints>
@@ -354,6 +366,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKP-fm-See">
                                         <rect key="frame" x="0.0" y="320" width="334" height="40"/>
                                         <state key="normal" title="REGISTER"/>
+                                        <connections>
+                                            <action selector="registerTapped:" destination="6GR-Kb-coT" eventType="touchUpInside" id="JcQ-d3-Pkp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -377,6 +392,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="myv-oh-Npb"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="hoO-RN-vyZ" id="MeU-Mr-qjK"/>
+                        <outlet property="firstNameTextField" destination="qbt-bE-JYc" id="OUh-b4-zwz"/>
+                        <outlet property="passwordTextField" destination="Gln-9Y-GsL" id="lRX-lJ-BOh"/>
+                        <outlet property="registerButton" destination="FKP-fm-See" id="Nfz-Lp-Cpi"/>
+                        <outlet property="surnameTextField" destination="L5n-aY-Lg3" id="UpO-VN-BaH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ri-W0-1v3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,0 +1,6 @@
+framework module Pods_CanaryApparelUITests {
+  umbrella header "Pods-CanaryApparelUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
