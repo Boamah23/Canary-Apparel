@@ -7,7 +7,12 @@
 //
 
 import UIKit
+/*import Firebase
+import FirebaseAuth
+import FirebaseFirestore*/
 
+
+@available(iOS 13.0, *)
 class SignInViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
@@ -40,5 +45,5 @@ class SignInViewController: UIViewController {
     
     @IBAction func loginTapped(_ sender: Any) {
     }
-    
+
 }

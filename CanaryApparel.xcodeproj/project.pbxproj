@@ -10,6 +10,7 @@
 		02B6FA22F01373FD78BA0754 /* Pods_CanaryApparelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB9EC810EBFC5886D6BA8AE /* Pods_CanaryApparelUITests.framework */; };
 		780D2F275979AAB22CFC3681 /* Pods_CanaryApparel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6613047C2662DF380A8A615 /* Pods_CanaryApparel.framework */; };
 		897DEBBE30D2987708816B12 /* Pods_CanaryApparelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294A955D937BFA097E7700D6 /* Pods_CanaryApparelTests.framework */; };
+		EA32B3162337FE28001BBAE5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA32B3152337FE28001BBAE5 /* GoogleService-Info.plist */; };
 		EA3B71952336CCCA0081DB65 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B71942336CCCA0081DB65 /* SignUpViewController.swift */; };
 		EA3B71972336CCE60081DB65 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B71962336CCE60081DB65 /* SignInViewController.swift */; };
 		EA3B71992336CCFF0081DB65 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B71982336CCFF0081DB65 /* AccountViewController.swift */; };
@@ -25,7 +26,6 @@
 		EAA3540E23341695004A4D9C /* CanaryApparelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3540D23341695004A4D9C /* CanaryApparelUITests.swift */; };
 		EAA3541D233418E8004A4D9C /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAA3541C233418E8004A4D9C /* Pacifico-Regular.ttf */; };
 		EAA354202334D7F5004A4D9C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA3541F2334D7F2004A4D9C /* Default-568h@2x.png */; };
-		EADDF8C02336DFF200DE3231 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EADDF8BF2336DFF200DE3231 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +52,7 @@
 		4AD3B56F622630458FED659B /* Pods-CanaryApparel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanaryApparel.debug.xcconfig"; path = "Target Support Files/Pods-CanaryApparel/Pods-CanaryApparel.debug.xcconfig"; sourceTree = "<group>"; };
 		5BD93E6B2D864A5D676F090C /* Pods-CanaryApparelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanaryApparelTests.debug.xcconfig"; path = "Target Support Files/Pods-CanaryApparelTests/Pods-CanaryApparelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BAB9EC810EBFC5886D6BA8AE /* Pods_CanaryApparelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanaryApparelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA32B3152337FE28001BBAE5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA3B71942336CCCA0081DB65 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EA3B71962336CCE60081DB65 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		EA3B71982336CCFF0081DB65 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		EAA3540F23341695004A4D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAA3541C233418E8004A4D9C /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		EAA3541F2334D7F2004A4D9C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		EADDF8BF2336DFF200DE3231 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EE6A86B4B5585194259A3AED /* Pods-CanaryApparel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanaryApparel.release.xcconfig"; path = "Target Support Files/Pods-CanaryApparel/Pods-CanaryApparel.release.xcconfig"; sourceTree = "<group>"; };
 		F6613047C2662DF380A8A615 /* Pods_CanaryApparel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanaryApparel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E3CD5A2F1DD232C765E052 /* Pods-CanaryApparelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanaryApparelUITests.release.xcconfig"; path = "Target Support Files/Pods-CanaryApparelUITests/Pods-CanaryApparelUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 				EADDF8BE2336D36F00DE3231 /* View Controllers */,
 				EAA3541B233418B7004A4D9C /* Fonts */,
 				EAA353F123341693004A4D9C /* Main.storyboard */,
-				EADDF8BF2336DFF200DE3231 /* GoogleService-Info.plist */,
+				EA32B3152337FE28001BBAE5 /* GoogleService-Info.plist */,
 				EAA353F423341695004A4D9C /* Assets.xcassets */,
 				EAA353F623341695004A4D9C /* LaunchScreen.storyboard */,
 				EAA353F923341695004A4D9C /* Info.plist */,
@@ -219,7 +219,6 @@
 				EAA353E423341693004A4D9C /* Sources */,
 				EAA353E523341693004A4D9C /* Frameworks */,
 				EAA353E623341693004A4D9C /* Resources */,
-				17B3D194A9E4333396DE0675 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,7 +320,7 @@
 				EAA353F523341695004A4D9C /* Assets.xcassets in Resources */,
 				EAA354202334D7F5004A4D9C /* Default-568h@2x.png in Resources */,
 				EAA353F323341693004A4D9C /* Main.storyboard in Resources */,
-				EADDF8C02336DFF200DE3231 /* GoogleService-Info.plist in Resources */,
+				EA32B3162337FE28001BBAE5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,23 +361,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		17B3D194A9E4333396DE0675 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CanaryApparel/Pods-CanaryApparel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CanaryApparel/Pods-CanaryApparel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CanaryApparel/Pods-CanaryApparel-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3396BDA3C8A0F2BA3D190633 /* [CP] Check Pods Manifest.lock */ = {
