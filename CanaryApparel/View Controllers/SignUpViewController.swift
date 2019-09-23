@@ -33,7 +33,31 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let firstNameLine = CALayer()
+        let surnameLine = CALayer()
+        let emailLine = CALayer()
+        let passwordLine = CALayer()
+        
+        
+        firstNameLine.frame = CGRect(x: 0, y: firstNameTextField.frame.height - 2, width: firstNameTextField.frame.width, height: 2)
+        firstNameLine.backgroundColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 1).cgColor
+        firstNameTextField.borderStyle = .none
+        firstNameTextField.layer.addSublayer(firstNameLine)
+        
+        surnameLine.frame = CGRect(x: 0, y: surnameTextField.frame.height - 2, width: surnameTextField.frame.width, height: 2)
+        surnameLine.backgroundColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 1).cgColor
+        surnameTextField.borderStyle = .none
+        surnameTextField.layer.addSublayer(surnameLine)
+        
+        emailLine.frame = CGRect(x: 0, y: emailTextField.frame.height - 2, width: emailTextField.frame.width, height: 2)
+        emailLine.backgroundColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 1).cgColor
+        emailTextField.borderStyle = .none
+        emailTextField.layer.addSublayer(emailLine)
+        
+        passwordLine.frame = CGRect(x: 0, y: passwordTextField.frame.height - 2, width: passwordTextField.frame.width, height: 2)
+        passwordLine.backgroundColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 1).cgColor
+        passwordTextField.borderStyle = .none
+        passwordTextField.layer.addSublayer(passwordLine)
     }
     
 

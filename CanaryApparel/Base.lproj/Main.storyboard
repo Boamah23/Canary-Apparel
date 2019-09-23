@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canary1" translatesAutoresizingMaskIntoConstraints="NO" id="cQL-t8-8Mg">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000045"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0sc-lq-C9b">
                                 <rect key="frame" x="40" y="319" width="334" height="196"/>
@@ -350,7 +350,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9py-AV-SnM">
-                                <rect key="frame" x="87" y="19" width="240.00000000000023" height="128"/>
+                                <rect key="frame" x="87" y="19" width="240" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce6-hX-691">
                                 <rect key="frame" x="128" y="184" width="158" height="20.5"/>
@@ -376,14 +376,18 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsg-Yl-D71">
                                         <rect key="frame" x="0.0" y="160" width="334" height="30"/>
-                                        <state key="normal" title="FORGOT PASSWORD?"/>
+                                        <state key="normal" title="FORGOT PASSWORD?">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="forgotPasswordTapped:" destination="GUP-oy-XW6" eventType="touchUpInside" id="vR9-1f-kqQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9v-m1-26q">
                                         <rect key="frame" x="0.0" y="230" width="334" height="30"/>
-                                        <state key="normal" title="LOGIN"/>
+                                        <state key="normal" title="LOGIN">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="loginTapped:" destination="GUP-oy-XW6" eventType="touchUpInside" id="Ozz-c4-fD2"/>
                                         </connections>
@@ -436,7 +440,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8XM-Vl-m9T">
-                                <rect key="frame" x="87" y="19" width="240.00000000000023" height="128"/>
+                                <rect key="frame" x="87" y="19" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="8FE-qN-TgT"/>
                                 </constraints>
@@ -469,7 +473,9 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKP-fm-See">
                                         <rect key="frame" x="0.0" y="320" width="334" height="40"/>
-                                        <state key="normal" title="REGISTER"/>
+                                        <state key="normal" title="REGISTER">
+                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="registerTapped:" destination="6GR-Kb-coT" eventType="touchUpInside" id="JcQ-d3-Pkp"/>
                                         </connections>
