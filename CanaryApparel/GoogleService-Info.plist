@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:237206090611:ios:92472145c0601078514b06</string>
+	<string>1:237206090611:ios:573fbb9c1bcf7c69514b06</string>
 	<key>DATABASE_URL</key>
 	<string>https://canary-apparel.firebaseio.com</string>
 </dict>
