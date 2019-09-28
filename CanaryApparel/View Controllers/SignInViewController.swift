@@ -7,9 +7,9 @@
 //
 
 import UIKit
-/*import Firebase
+import Firebase
 import FirebaseAuth
-import FirebaseFirestore*/
+import FirebaseFirestore
 
 
 @available(iOS 13.0, *)
@@ -55,6 +55,43 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func loginTapped(_ sender: Any) {
+
+    
+        let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        // Signing in the user
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            
+            if error != nil {
+                // Couldn't sign in
+                showError(error)
+                
+            }
+            else {
+                
+                
+                let searchViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.searchViewController)
+                
+                self.view.window?.rootViewController = searchViewController
+                self.view.window?.makeKeyAndVisible()
+            }
+            
+        }
+        
+        func showError(_ sender: Any) {
+            let alert = UIAlertController(title: "ERROR", message: "Something isn't right, try again", preferredStyle: .alert)
+            let action1 = UIAlertAction(title: "Cancel", style: .default){ (action) in
+                print("Cancel")
+            }
+            alert.addAction(action1)
+            present(alert, animated: true, completion: nil)
+
+        }
+    }
+    
+
+
     }
 
-}
+
