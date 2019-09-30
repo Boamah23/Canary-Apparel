@@ -12,8 +12,8 @@
 		897DEBBE30D2987708816B12 /* Pods_CanaryApparelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294A955D937BFA097E7700D6 /* Pods_CanaryApparelTests.framework */; };
 		EA044251233E340F0041C132 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA044250233E340F0041C132 /* Constants.swift */; };
 		EA044253233E7FA10041C132 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA044252233E7FA10041C132 /* GoogleService-Info.plist */; };
-		EA044257233FB66F0041C132 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA044256233FB66F0041C132 /* CollectionViewCell.swift */; };
-		EA044259233FB6CA0041C132 /* ProductGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA044258233FB6CA0041C132 /* ProductGalleryViewController.swift */; };
+		EA06B2A723420C0300143A59 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06B2A623420C0300143A59 /* CollectionViewCell.swift */; };
+		EA06B2A923420C3600143A59 /* ProductGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06B2A823420C3600143A59 /* ProductGalleryViewController.swift */; };
 		EA3B71952336CCCA0081DB65 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B71942336CCCA0081DB65 /* SignUpViewController.swift */; };
 		EA3B71972336CCE60081DB65 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B71962336CCE60081DB65 /* SignInViewController.swift */; };
 		EA3B71992336CCFF0081DB65 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B71982336CCFF0081DB65 /* AccountViewController.swift */; };
@@ -57,8 +57,8 @@
 		BAB9EC810EBFC5886D6BA8AE /* Pods_CanaryApparelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanaryApparelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA044250233E340F0041C132 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EA044252233E7FA10041C132 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
-		EA044256233FB66F0041C132 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		EA044258233FB6CA0041C132 /* ProductGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGalleryViewController.swift; sourceTree = "<group>"; };
+		EA06B2A623420C0300143A59 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		EA06B2A823420C3600143A59 /* ProductGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGalleryViewController.swift; sourceTree = "<group>"; };
 		EA3B71942336CCCA0081DB65 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EA3B71962336CCE60081DB65 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		EA3B71982336CCFF0081DB65 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -205,10 +205,10 @@
 			children = (
 				EAA353ED23341693004A4D9C /* HomeViewController.swift */,
 				EA3B71942336CCCA0081DB65 /* SignUpViewController.swift */,
-				EA044256233FB66F0041C132 /* CollectionViewCell.swift */,
-				EA044258233FB6CA0041C132 /* ProductGalleryViewController.swift */,
 				EA044250233E340F0041C132 /* Constants.swift */,
 				EA3B71962336CCE60081DB65 /* SignInViewController.swift */,
+				EA06B2A823420C3600143A59 /* ProductGalleryViewController.swift */,
+				EA06B2A623420C0300143A59 /* CollectionViewCell.swift */,
 				EAA353EF23341693004A4D9C /* SearchViewController.swift */,
 				EA3B719C2336CD380081DB65 /* FavouritesViewController.swift */,
 				EA3B719A2336CD190081DB65 /* CartViewController.swift */,
@@ -441,12 +441,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA044257233FB66F0041C132 /* CollectionViewCell.swift in Sources */,
+				EA06B2A723420C0300143A59 /* CollectionViewCell.swift in Sources */,
 				EA3B719D2336CD380081DB65 /* FavouritesViewController.swift in Sources */,
 				EAA353F023341693004A4D9C /* SearchViewController.swift in Sources */,
 				EAA353EC23341693004A4D9C /* AppDelegate.swift in Sources */,
 				EAA353EE23341693004A4D9C /* HomeViewController.swift in Sources */,
-				EA044259233FB6CA0041C132 /* ProductGalleryViewController.swift in Sources */,
+				EA06B2A923420C3600143A59 /* ProductGalleryViewController.swift in Sources */,
 				EA3B71972336CCE60081DB65 /* SignInViewController.swift in Sources */,
 				EA3B71992336CCFF0081DB65 /* AccountViewController.swift in Sources */,
 				EA3B719B2336CD190081DB65 /* CartViewController.swift in Sources */,

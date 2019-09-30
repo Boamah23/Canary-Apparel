@@ -12,6 +12,7 @@ import FirebaseAuth
 import FirebaseFirestore
 
 
+
 @available(iOS 13.0, *)
 class SignUpViewController: UIViewController {
 
@@ -36,6 +37,7 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         let firstNameLine = CALayer()
         let surnameLine = CALayer()
@@ -62,6 +64,8 @@ class SignUpViewController: UIViewController {
         passwordLine.backgroundColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 1).cgColor
         passwordTextField.borderStyle = .none
         passwordTextField.layer.addSublayer(passwordLine)
+        
+        
     }
     
     func fieldValidation() -> String? {

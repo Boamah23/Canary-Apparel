@@ -65,16 +65,14 @@ class SignInViewController: UIViewController {
             
             if error != nil {
                 // Couldn't sign in
-                showError(error)
+                showError(error as Any)
                 
             }
             else {
                 
                 
-                let searchViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.searchViewController)
-                
-                self.view.window?.rootViewController = searchViewController
-                self.view.window?.makeKeyAndVisible()
+                //switch to tab view
+
             }
             
         }

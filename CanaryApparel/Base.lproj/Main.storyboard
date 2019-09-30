@@ -563,32 +563,51 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wzt-11-lto">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wzt-11-lto">
                                                     <rect key="frame" x="0.0" y="0.0" width="374" height="216"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="QK9-i9-MP9"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="pAF-ni-LNL"/>
+                                                        <constraint firstAttribute="height" constant="200" id="xbp-PB-1hn"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntH-Io-gfn">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntH-Io-gfn">
                                                     <rect key="frame" x="8" y="224" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="jxdb jabsjnxlasn" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="38s-OV-9i8">
-                                                    <rect key="frame" x="0.0" y="244" width="180" height="42"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="jxdb jabsjnxlasn" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="38s-OV-9i8">
+                                                    <rect key="frame" x="0.0" y="244" width="374" height="56"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="38s-OV-9i8" firstAttribute="top" secondItem="wzt-11-lto" secondAttribute="bottom" constant="28" id="7R2-sC-ONY"/>
+                                                <constraint firstItem="38s-OV-9i8" firstAttribute="leading" secondItem="3Qp-Tc-vYq" secondAttribute="leading" id="A2S-3b-B8f"/>
+                                                <constraint firstAttribute="trailing" secondItem="38s-OV-9i8" secondAttribute="trailing" id="ENg-SF-iDx"/>
+                                                <constraint firstItem="ntH-Io-gfn" firstAttribute="top" secondItem="wzt-11-lto" secondAttribute="bottom" constant="8" id="Hji-dY-VHk"/>
+                                                <constraint firstItem="ntH-Io-gfn" firstAttribute="top" secondItem="wzt-11-lto" secondAttribute="bottom" constant="8" id="OiZ-41-SGI"/>
+                                                <constraint firstAttribute="bottom" secondItem="38s-OV-9i8" secondAttribute="bottom" id="QvZ-hp-pfv"/>
+                                                <constraint firstAttribute="trailing" secondItem="wzt-11-lto" secondAttribute="trailing" id="XUW-Oj-Ver"/>
+                                                <constraint firstItem="ntH-Io-gfn" firstAttribute="top" secondItem="wzt-11-lto" secondAttribute="bottom" constant="8" symbolic="YES" id="YbK-nD-oVY"/>
+                                                <constraint firstAttribute="bottom" secondItem="ntH-Io-gfn" secondAttribute="bottom" constant="55" id="poh-Sf-AA2"/>
+                                                <constraint firstItem="wzt-11-lto" firstAttribute="top" secondItem="3Qp-Tc-vYq" secondAttribute="top" id="qKq-JN-2N3"/>
+                                                <constraint firstItem="wzt-11-lto" firstAttribute="leading" secondItem="3Qp-Tc-vYq" secondAttribute="leading" id="qzl-8n-hOd"/>
+                                                <constraint firstItem="ntH-Io-gfn" firstAttribute="leading" secondItem="3Qp-Tc-vYq" secondAttribute="leading" constant="8" id="tOC-dL-uea"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ntH-Io-gfn" secondAttribute="trailing" symbolic="YES" id="upt-eD-T5d"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="374" height="300"/>
                                         <connections>
                                             <outlet property="ProductDescription" destination="38s-OV-9i8" id="uQI-bc-5cb"/>
                                             <outlet property="ProductPrice" destination="ntH-Io-gfn" id="BUF-jm-44g"/>
-                                            <outlet property="productImageView" destination="wzt-11-lto" id="CKa-8s-7wh"/>
+                                            <outlet property="productDescription" destination="38s-OV-9i8" id="95s-LC-bY8"/>
+                                            <outlet property="productImageView" destination="wzt-11-lto" id="QPB-tm-RSJ"/>
+                                            <outlet property="productPrice" destination="ntH-Io-gfn" id="roN-PA-RZ8"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -599,12 +618,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="ayG-JR-d1Q"/>
                     <connections>
-                        <outlet property="collectionView" destination="MZ1-aa-8JB" id="UuU-aG-gDR"/>
+                        <outlet property="collectionView" destination="MZ1-aa-8JB" id="ONP-82-VX7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cY-qb-Z1h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="1494.6428571428571"/>
+            <point key="canvasLocation" x="0.0" y="1531.4732142857142"/>
         </scene>
         <!--Product page-->
         <scene sceneID="ze9-y3-bJw">
