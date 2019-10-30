@@ -9,16 +9,9 @@
 import UIKit
 
 
-class ProductGalleryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ProductGalleryViewController: UIViewController {
     
-    
-    @IBOutlet weak var collectionView: UICollectionView!
-    
-    let summerWear = [("product 1"), ("product 2"), ("product 3"), ("product 4"), ("product 5"), ("product 6")]
-    
-    let prices = [("£1"), ("£2"), ("£3"), ("£4"), ("£5"), ("£6")]
-    
-    let decriptions = [("enter product description"),("enter product description"),("enter product description"),("enter product description"),("enter product description"),("enter product description")]
+    var collectionData = ["image1", "image2", "image3", "image4", "image5", "image6"]
     
     let productImages: [UIImage] = [
         UIImage(named: "image1")!,
@@ -28,28 +21,38 @@ class ProductGalleryViewController: UIViewController, UICollectionViewDelegate, 
         UIImage(named: "image5")!,
         UIImage(named: "image6")!,
     ]
+    
+    let prices = [("£1"), ("£2"), ("£3"), ("£4"), ("£5"), ("£6")]
+    
+    let decriptions = [("enter product description"),("enter product description"),("enter product description"),("enter product description"),("enter product description"),("enter product description")]
+    
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-            collectionView.dataSource = self
-            collectionView.delegate = self
-            
-
-        }
-        
-        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return summerWear.count
-        }
-        
-        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
-            
-            cell.productImageView.image = productImages[indexPath.item]
-            cell.productDescription.text = decriptions[indexPath.item]
-            cell.productPrice.text = prices[indexPath.item]
-            
-            return cell
         }
 
+
+}
+
+
+extension ProductGalleryViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return collectionData.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
+        cell.productImage.image = productImages[indexPath.item]
+        cell.productPrice.text = prices[indexPath.item]
+    return cell
+    }
+    
+    
+    
+        
 }
