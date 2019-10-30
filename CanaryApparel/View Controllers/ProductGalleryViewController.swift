@@ -52,6 +52,11 @@ extension ProductGalleryViewController: UICollectionViewDelegate, UICollectionVi
     return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
+        vc?.img = productImages[indexPath.item]
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
     
     
         
