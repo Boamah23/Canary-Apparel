@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canary1" translatesAutoresizingMaskIntoConstraints="NO" id="cQL-t8-8Mg">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000045"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="896" id="E7S-Pu-6uv"/>
                                     <constraint firstAttribute="width" constant="414" id="Q8i-mt-nwi"/>
@@ -388,7 +388,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="83I-d9-91d">
-                                <rect key="frame" x="94.666666666666686" y="33.666666666666657" width="225.00000000000023" height="224.99999999999997"/>
+                                <rect key="frame" x="94.666666666666686" y="33.666666666666657" width="225" height="224.99999999999997"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="0Bf-7g-NS3"/>
                                     <constraint firstAttribute="width" constant="225" id="xl6-ol-hOQ"/>
@@ -467,7 +467,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8XM-Vl-m9T">
-                                <rect key="frame" x="94.666666666666686" y="33.666666666666657" width="225.00000000000023" height="224.99999999999997"/>
+                                <rect key="frame" x="94.666666666666686" y="33.666666666666657" width="225" height="224.99999999999997"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="WwP-z9-flD"/>
                                     <constraint firstAttribute="width" constant="225" id="bLh-Rf-t31"/>
@@ -733,6 +733,9 @@
                                     <constraint firstAttribute="height" constant="32" id="7zg-D8-w0G"/>
                                 </constraints>
                                 <state key="normal" image="icons8-upload-100 (1)"/>
+                                <connections>
+                                    <action selector="sharePressed:" destination="vAV-G0-hcU" eventType="touchUpInside" id="cMT-0M-Nld"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfZ-6u-AeQ">
                                 <rect key="frame" x="361" y="510" width="38" height="39"/>
