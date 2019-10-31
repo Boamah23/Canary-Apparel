@@ -35,7 +35,7 @@ class DetailViewController: UIViewController {
     
     
     @IBAction func sharePressed(_ sender: Any) {
-        let activityVC = UIActivityViewController(activityItems: [img], applicationActivities: nil)
+        let activityVC = UIActivityViewController(activityItems: [img, priceLbl,descriptionLbl], applicationActivities: nil)
         activityVC.popoverPresentationController?.sourceView = self.view
         
         self.present(activityVC, animated: true, completion: nil)
