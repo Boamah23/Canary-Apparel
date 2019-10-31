@@ -26,7 +26,7 @@ class ProductGalleryViewController: UIViewController {
     
     let prices = [("£26.00"), ("£16.00"), ("£28.00"), ("£34.00"), ("£38.00"), ("£36.00"), ("£20.00"), ("£30.00")]
     
-    let descriptions = [("enter product description"),("enter product description"),("enter product description"),("enter product description"),("enter product description"),("enter product description"),("enter product description"),("enter product description")]
+    let descriptions = [("Cropped Levi's t-shirt"),("Cropped vest top"),("White and black stripped top"),("Mustard long-line shirt"),("Denim dungarees"),("White bodysuit"),("Hipster white t-shirt"),("white denim dungarees")]
     
     
     @IBOutlet weak var collectionView: UICollectionView!
