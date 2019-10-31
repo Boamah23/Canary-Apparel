@@ -12,14 +12,25 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var product: UIImageView!
     
+    @IBOutlet weak var pricing: UILabel!
+    
+    @IBOutlet weak var name: UILabel!
+    
     var img = UIImage()
+    var priceLbl = ""
+    var descriptionLbl = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         product.image = img
+        
+        pricing.text = priceLbl
+        
+        name.text = descriptionLbl
 
-        // Do any additional setup after loading the view.
+        
+
     }
     
 

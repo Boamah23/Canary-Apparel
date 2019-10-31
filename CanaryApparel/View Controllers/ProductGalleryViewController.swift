@@ -11,7 +11,7 @@ import UIKit
 
 class ProductGalleryViewController: UIViewController {
     
-    var collectionData = ["image1", "image2", "image3", "image4", "image5", "image6"]
+    var collectionData = ["image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8"]
     
     let productImages: [UIImage] = [
         UIImage(named: "image1")!,
@@ -20,11 +20,13 @@ class ProductGalleryViewController: UIViewController {
         UIImage(named: "image4")!,
         UIImage(named: "image5")!,
         UIImage(named: "image6")!,
+        UIImage(named: "image7")!,
+        UIImage(named: "image8")!,
     ]
     
-    let prices = [("£1"), ("£2"), ("£3"), ("£4"), ("£5"), ("£6")]
+    let prices = [("£26.00"), ("£16.00"), ("£28.00"), ("£34.00"), ("£38.00"), ("£36.00"), ("£20.00"), ("£30.00")]
     
-    let decriptions = [("enter product description"),("enter product description"),("enter product description"),("enter product description"),("enter product description"),("enter product description")]
+    let descriptions = [("enter product description"),("enter product description"),("enter product description"),("enter product description"),("enter product description"),("enter product description"),("enter product description"),("enter product description")]
     
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -49,12 +51,15 @@ extension ProductGalleryViewController: UICollectionViewDelegate, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
         cell.productImage.image = productImages[indexPath.item]
         cell.productPrice.text = prices[indexPath.item]
+        cell.productDescription.text = descriptions[indexPath.item]
     return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
         vc?.img = productImages[indexPath.item]
+        vc?.priceLbl = prices[indexPath.item]
+        vc?.descriptionLbl = descriptions[indexPath.item]
         self.navigationController?.pushViewController(vc!, animated: true)
     }
     

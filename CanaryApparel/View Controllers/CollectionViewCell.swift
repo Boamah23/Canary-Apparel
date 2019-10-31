@@ -14,4 +14,5 @@ class CollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var productPrice: UILabel!
     
+    @IBOutlet weak var productDescription: UILabel!
 }
