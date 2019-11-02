@@ -69,7 +69,7 @@ class DetailViewController: UIViewController, FaveButtonDelegate {
         createSizeSelector()
         createToolBar()
         
-        self.heartButton?.setSelected(selected: true, animated: false)
+        self.heartButton?.setSelected(selected: false, animated: true)
         
         
     }
