@@ -30,6 +30,14 @@
 		EAA3540E23341695004A4D9C /* CanaryApparelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3540D23341695004A4D9C /* CanaryApparelUITests.swift */; };
 		EAA3541D233418E8004A4D9C /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAA3541C233418E8004A4D9C /* Pacifico-Regular.ttf */; };
 		EAA354202334D7F5004A4D9C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA3541F2334D7F2004A4D9C /* Default-568h@2x.png */; };
+		EAB29BEF236D03F200F3BA09 /* FaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29BEE236D03F200F3BA09 /* FaveButton.swift */; };
+		EAB29BF1236D03F400F3BA09 /* FaveIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29BF0236D03F400F3BA09 /* FaveIcon.swift */; };
+		EAB29BF4236D043000F3BA09 /* Spark.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29BF3236D043000F3BA09 /* Spark.swift */; };
+		EAB29BF6236D043400F3BA09 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29BF5236D043400F3BA09 /* Ring.swift */; };
+		EAB29BFF236D046100F3BA09 /* Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29BFB236D045D00F3BA09 /* Init.swift */; };
+		EAB29C00236D046100F3BA09 /* Constraints+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29BFC236D045E00F3BA09 /* Constraints+.swift */; };
+		EAB29C01236D046100F3BA09 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29BFD236D046000F3BA09 /* Easing.swift */; };
+		EAB29C02236D046100F3BA09 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29BFE236D046100F3BA09 /* Geometry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +90,15 @@
 		EAA3540F23341695004A4D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAA3541C233418E8004A4D9C /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		EAA3541F2334D7F2004A4D9C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EAB29BEE236D03F200F3BA09 /* FaveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaveButton.swift; sourceTree = "<group>"; };
+		EAB29BF0236D03F400F3BA09 /* FaveIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaveIcon.swift; sourceTree = "<group>"; };
+		EAB29BF3236D043000F3BA09 /* Spark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spark.swift; sourceTree = "<group>"; };
+		EAB29BF5236D043400F3BA09 /* Ring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		EAB29BFB236D045D00F3BA09 /* Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Init.swift; sourceTree = "<group>"; };
+		EAB29BFC236D045E00F3BA09 /* Constraints+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constraints+.swift"; sourceTree = "<group>"; };
+		EAB29BFD236D046000F3BA09 /* Easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
+		EAB29BFE236D046100F3BA09 /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		EAB29C04236D165D00F3BA09 /* FaveButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaveButton.h; sourceTree = "<group>"; };
 		EE6A86B4B5585194259A3AED /* Pods-CanaryApparel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanaryApparel.release.xcconfig"; path = "Target Support Files/Pods-CanaryApparel/Pods-CanaryApparel.release.xcconfig"; sourceTree = "<group>"; };
 		F6613047C2662DF380A8A615 /* Pods_CanaryApparel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanaryApparel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E3CD5A2F1DD232C765E052 /* Pods-CanaryApparelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanaryApparelUITests.release.xcconfig"; path = "Target Support Files/Pods-CanaryApparelUITests/Pods-CanaryApparelUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,7 +158,9 @@
 		EAA353DF23341692004A4D9C = {
 			isa = PBXGroup;
 			children = (
+				EAB29C03236D163300F3BA09 /* FaveButton */,
 				EAA3541F2334D7F2004A4D9C /* Default-568h@2x.png */,
+				EAB29BED236D03DF00F3BA09 /* Source */,
 				EAA353EA23341693004A4D9C /* CanaryApparel */,
 				EAA3540123341695004A4D9C /* CanaryApparelTests */,
 				EAA3540C23341695004A4D9C /* CanaryApparelUITests */,
@@ -200,6 +219,37 @@
 				EAA3541C233418E8004A4D9C /* Pacifico-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EAB29BED236D03DF00F3BA09 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EAB29BF0236D03F400F3BA09 /* FaveIcon.swift */,
+				EAB29BF3236D043000F3BA09 /* Spark.swift */,
+				EAB29BF5236D043400F3BA09 /* Ring.swift */,
+				EAB29BEE236D03F200F3BA09 /* FaveButton.swift */,
+				EAB29BF2236D041500F3BA09 /* Helpers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		EAB29BF2236D041500F3BA09 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EAB29BFC236D045E00F3BA09 /* Constraints+.swift */,
+				EAB29BFD236D046000F3BA09 /* Easing.swift */,
+				EAB29BFE236D046100F3BA09 /* Geometry.swift */,
+				EAB29BFB236D045D00F3BA09 /* Init.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EAB29C03236D163300F3BA09 /* FaveButton */ = {
+			isa = PBXGroup;
+			children = (
+				EAB29C04236D165D00F3BA09 /* FaveButton.h */,
+			);
+			path = FaveButton;
 			sourceTree = "<group>";
 		};
 		EADDF8BE2336D36F00DE3231 /* View Controllers */ = {
@@ -445,14 +495,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA3B719D2336CD380081DB65 /* FavouritesViewController.swift in Sources */,
+				EAB29C01236D046100F3BA09 /* Easing.swift in Sources */,
+				EAB29BFF236D046100F3BA09 /* Init.swift in Sources */,
 				EAA353F023341693004A4D9C /* SearchViewController.swift in Sources */,
+				EAB29BF1236D03F400F3BA09 /* FaveIcon.swift in Sources */,
+				EAB29C00236D046100F3BA09 /* Constraints+.swift in Sources */,
 				EAA353EC23341693004A4D9C /* AppDelegate.swift in Sources */,
 				EA83F60A2368E3A4002E20F1 /* DetailViewController.swift in Sources */,
+				EAB29BF6236D043400F3BA09 /* Ring.swift in Sources */,
+				EAB29C02236D046100F3BA09 /* Geometry.swift in Sources */,
 				EAA353EE23341693004A4D9C /* HomeViewController.swift in Sources */,
 				EA06B2A923420C3600143A59 /* ProductGalleryViewController.swift in Sources */,
 				EA3B71972336CCE60081DB65 /* SignInViewController.swift in Sources */,
 				EA3B71992336CCFF0081DB65 /* AccountViewController.swift in Sources */,
+				EAB29BF4236D043000F3BA09 /* Spark.swift in Sources */,
 				EA3B719B2336CD190081DB65 /* CartViewController.swift in Sources */,
+				EAB29BEF236D03F200F3BA09 /* FaveButton.swift in Sources */,
 				EA3B71952336CCCA0081DB65 /* SignUpViewController.swift in Sources */,
 				EA044251233E340F0041C132 /* Constants.swift in Sources */,
 				EA83F60823676D16002E20F1 /* CollectionViewCell.swift in Sources */,

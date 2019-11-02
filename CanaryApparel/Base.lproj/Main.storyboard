@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canary1" translatesAutoresizingMaskIntoConstraints="NO" id="cQL-t8-8Mg">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000045"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="896" id="E7S-Pu-6uv"/>
                                     <constraint firstAttribute="width" constant="414" id="Q8i-mt-nwi"/>
@@ -388,7 +388,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="83I-d9-91d">
-                                <rect key="frame" x="94.666666666666686" y="33.666666666666657" width="225.00000000000023" height="224.99999999999997"/>
+                                <rect key="frame" x="94.666666666666686" y="33.666666666666657" width="225" height="224.99999999999997"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="0Bf-7g-NS3"/>
                                     <constraint firstAttribute="width" constant="225" id="xl6-ol-hOQ"/>
@@ -467,7 +467,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8XM-Vl-m9T">
-                                <rect key="frame" x="94.666666666666686" y="33.666666666666657" width="225.00000000000023" height="224.99999999999997"/>
+                                <rect key="frame" x="94.666666666666686" y="33.666666666666657" width="225" height="224.99999999999997"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="WwP-z9-flD"/>
                                     <constraint firstAttribute="width" constant="225" id="bLh-Rf-t31"/>
@@ -735,12 +735,15 @@
                                     <action selector="sharePressed:" destination="vAV-G0-hcU" eventType="touchUpInside" id="cMT-0M-Nld"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfZ-6u-AeQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfZ-6u-AeQ" customClass="FaveButton" customModule="CanaryApparel" customModuleProvider="target">
                                 <rect key="frame" x="361" y="510" width="38" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="Br9-W7-GIG"/>
                                 </constraints>
-                                <state key="normal" image="icons8-heart-outline-100"/>
+                                <state key="normal" image="icons8-heart-50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vAV-G0-hcU" id="oMi-fv-Xha"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -771,6 +774,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="NCd-pQ-OES"/>
                     <connections>
+                        <outlet property="heartButton" destination="FfZ-6u-AeQ" id="5qH-BQ-qEG"/>
                         <outlet property="name" destination="bqh-h4-fc4" id="Eew-fa-eun"/>
                         <outlet property="pricing" destination="6Ie-Bb-Yf8" id="wds-Up-EzG"/>
                         <outlet property="product" destination="22T-Or-Kfy" id="AtG-QY-Hfo"/>
@@ -806,7 +810,7 @@
         <image name="canary1" width="2124" height="2940"/>
         <image name="holiday" width="6016" height="4000"/>
         <image name="icons8-a_home" width="25" height="25"/>
-        <image name="icons8-heart-outline-100" width="100" height="100"/>
+        <image name="icons8-heart-50" width="50" height="50"/>
         <image name="icons8-like" width="25" height="25"/>
         <image name="icons8-search_filled" width="25" height="25"/>
         <image name="icons8-shopping_cart" width="25" height="25"/>

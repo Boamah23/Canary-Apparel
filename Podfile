@@ -5,6 +5,7 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Core'
 pod 'Firebase/Firestore'
+pod 'FaveButton'
 
 target 'CanaryApparel' do
   # Comment the next line if you don't want to use dynamic frameworks
