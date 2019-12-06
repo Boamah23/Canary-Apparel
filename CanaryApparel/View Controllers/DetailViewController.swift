@@ -33,6 +33,7 @@ class DetailViewController: UIViewController, FaveButtonDelegate {
     
     @IBOutlet weak var heartButton: FaveButton?
     
+    //declare colours that will be used
     let colors = [
         DotColors(first: color(0x7DC2F4), second: color(0xE2264D)),
         DotColors(first: color(0xF8CC61), second: color(0x9BDFBA)),
@@ -41,12 +42,12 @@ class DetailViewController: UIViewController, FaveButtonDelegate {
         DotColors(first: color(0xF68FA7), second: color(0xF6A2B8))
     ]
     
-    
+    //declare variables
     var img = UIImage()
     var priceLbl = ""
     var descriptionLbl = ""
     
-    
+    //declare array of sizes
     let sizes = ["Extra Small - XS",
                 "Small - S",
                 "Medium - M",
@@ -55,7 +56,7 @@ class DetailViewController: UIViewController, FaveButtonDelegate {
     
     var selectedSize: String?
 
-
+    //passes data to UIimage and strings
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +66,7 @@ class DetailViewController: UIViewController, FaveButtonDelegate {
         pricing.text = priceLbl
         
         name.text = descriptionLbl
-        
+        //runs functions
         createSizeSelector()
         createToolBar()
         
@@ -74,25 +75,21 @@ class DetailViewController: UIViewController, FaveButtonDelegate {
         
     }
     
-    @IBAction func addtobasketButtonTapped(sender: AnyObject){
-
-        
-    }
     
-    
+    //share button activity controller
     @IBAction func sharePressed(_ sender: Any) {
         let activityVC = UIActivityViewController(activityItems: [img, priceLbl,descriptionLbl], applicationActivities: nil)
         activityVC.popoverPresentationController?.sourceView = self.view
         
         self.present(activityVC, animated: true, completion: nil)
     }
-    
+    //create size selector
     func createSizeSelector() {
         let sizeSelector = UIPickerView()
         sizeSelector.delegate = self as UIPickerViewDelegate
         sizeSelection.inputView = sizeSelector
     }
-    
+    //create tool bar
     func createToolBar() {
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
@@ -104,7 +101,7 @@ class DetailViewController: UIViewController, FaveButtonDelegate {
         
         sizeSelection.inputAccessoryView = toolBar
     }
-    
+    //Dismisses the keyboard from the screen
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
@@ -130,6 +127,7 @@ extension DetailViewController: UIPickerViewDelegate, UIPickerViewDataSource{
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        //counts number of items in array and returns value
         return sizes.count
     }
     
