@@ -26,18 +26,11 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let emailLine = CALayer()
-        let passwordLine = CALayer()
         
-        emailLine.frame = CGRect(x: 0, y: emailTextField.frame.height - 2, width: emailTextField.frame.width, height: 2)
-        emailLine.backgroundColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 1).cgColor
-        emailTextField.borderStyle = .none
-        emailTextField.layer.addSublayer(emailLine)
+
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         
-        passwordLine.frame = CGRect(x: 0, y: passwordTextField.frame.height - 2, width: passwordTextField.frame.width, height: 2)
-        passwordLine.backgroundColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 1).cgColor
-        passwordTextField.borderStyle = .none
-        passwordTextField.layer.addSublayer(passwordLine)
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
     }
     
 
@@ -53,6 +46,7 @@ class SignInViewController: UIViewController {
 
     @IBAction func forgotPasswordTapped(_ sender: Any) {
     }
+    
     
     @IBAction func loginTapped(_ sender: Any) {
 
