@@ -9,12 +9,14 @@
 import UIKit
 
 class CartTableVC: UITableViewController {
+    
+    //data model
 
     var products = ProductLine.getProductLines()[0].products
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //add navigation bar button 
         navigationItem.rightBarButtonItem = editButtonItem
         
     }
@@ -30,6 +32,7 @@ class CartTableVC: UITableViewController {
         return products.count
     }
     
+    //Returns a reusable table-view cell object located by its identifier.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductTableViewCell
         let product = products[indexPath.row]
@@ -37,11 +40,12 @@ class CartTableVC: UITableViewController {
         cell.product = product
         return cell
     }
-    
+    //set row height
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200.0
     }
     
+    //delete function
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             self.products.remove(at: indexPath.row)
