@@ -2,12 +2,11 @@
 //  CanaryApparelTests.swift
 //  CanaryApparelTests
 //
-//  Created by nathan boamah on 19/09/2019.
+//  Created by nathan boamah on 06/12/2019.
 //  Copyright © 2019 nathan boamah. All rights reserved.
 //
 
 import XCTest
-@testable import CanaryApparel
 
 class CanaryApparelTests: XCTestCase {
 
@@ -26,7 +25,7 @@ class CanaryApparelTests: XCTestCase {
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
