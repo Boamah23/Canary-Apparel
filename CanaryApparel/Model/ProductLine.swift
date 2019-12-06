@@ -11,7 +11,7 @@ import UIKit
 class ProductLine {
     var products: [Product]
     var name: String
-    
+    //initialise instances
     init(named: String, includedProducts: [Product]){
         name = named
         products = includedProducts
@@ -24,7 +24,7 @@ class ProductLine {
     
     private class func stockImages() -> ProductLine {
         var products = [Product]()
-        
+        //append to product array
         products.append(Product(titled: "Cropped Levi's t-shirt", imageName: "image1"))
         products.append(Product(titled: "Cropped vest top", imageName: "image2"))
         products.append(Product(titled: "White and black stripped top", imageName: "image3"))
