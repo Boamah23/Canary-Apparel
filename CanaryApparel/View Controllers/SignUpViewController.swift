@@ -16,13 +16,12 @@ import FirebaseFirestore
 @available(iOS 13.0, *)
 class SignUpViewController: UIViewController {
 
-    
+//
     @IBOutlet weak var firstNameTextField: UITextField!
     
     
     @IBOutlet weak var surnameTextField: UITextField!
-    
-    
+       
     @IBOutlet weak var emailTextField: UITextField!
     
     
@@ -39,31 +38,17 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         
 
-        let firstNameLine = CALayer()
-        let surnameLine = CALayer()
-        let emailLine = CALayer()
-        let passwordLine = CALayer()
         
+   
+        firstNameTextField.attributedPlaceholder = NSAttributedString(string: "First name", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         
-        firstNameLine.frame = CGRect(x: 0, y: firstNameTextField.frame.height - 2, width: firstNameTextField.frame.width, height: 2)
-        firstNameLine.backgroundColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 1).cgColor
-        firstNameTextField.borderStyle = .none
-        firstNameTextField.layer.addSublayer(firstNameLine)
+
+        surnameTextField.attributedPlaceholder = NSAttributedString(string: "Surname", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         
-        surnameLine.frame = CGRect(x: 0, y: surnameTextField.frame.height - 2, width: surnameTextField.frame.width, height: 2)
-        surnameLine.backgroundColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 1).cgColor
-        surnameTextField.borderStyle = .none
-        surnameTextField.layer.addSublayer(surnameLine)
+
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         
-        emailLine.frame = CGRect(x: 0, y: emailTextField.frame.height - 2, width: emailTextField.frame.width, height: 2)
-        emailLine.backgroundColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 1).cgColor
-        emailTextField.borderStyle = .none
-        emailTextField.layer.addSublayer(emailLine)
-        
-        passwordLine.frame = CGRect(x: 0, y: passwordTextField.frame.height - 2, width: passwordTextField.frame.width, height: 2)
-        passwordLine.backgroundColor = UIColor.init(displayP3Red: 0, green: 0, blue: 0, alpha: 1).cgColor
-        passwordTextField.borderStyle = .none
-        passwordTextField.layer.addSublayer(passwordLine)
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         
         
     }
@@ -117,7 +102,7 @@ class SignUpViewController: UIViewController {
                 if err != nil {
                     
                     // There was an error creating the user
-                    self.showError(error)
+                    self.showError(error as Any)
                     
                 }
                 else {
@@ -134,7 +119,6 @@ class SignUpViewController: UIViewController {
                     }
                     
                     // Transition to the home screen
-                    self.transitionToSearch()
                 }
                 
             }
@@ -154,13 +138,5 @@ class SignUpViewController: UIViewController {
 
     }
     
-    func transitionToSearch() {
-        
-        let searchViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.searchViewController) as? UIViewController
-        
-        view.window?.rootViewController = searchViewController
-        view.window?.makeKeyAndVisible()
-        
-    }
     
 }
