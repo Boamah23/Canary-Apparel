@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02B6FA22F01373FD78BA0754 /* Pods_CanaryApparelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB9EC810EBFC5886D6BA8AE /* Pods_CanaryApparelUITests.framework */; };
 		780D2F275979AAB22CFC3681 /* Pods_CanaryApparel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6613047C2662DF380A8A615 /* Pods_CanaryApparel.framework */; };
-		897DEBBE30D2987708816B12 /* Pods_CanaryApparelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294A955D937BFA097E7700D6 /* Pods_CanaryApparelTests.framework */; };
 		EA044253233E7FA10041C132 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA044252233E7FA10041C132 /* GoogleService-Info.plist */; };
 		EA06B2A923420C3600143A59 /* ProductGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06B2A823420C3600143A59 /* ProductGalleryViewController.swift */; };
 		EA3B71952336CCCA0081DB65 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B71942336CCCA0081DB65 /* SignUpViewController.swift */; };
@@ -23,8 +21,6 @@
 		EAA353F323341693004A4D9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA353F123341693004A4D9C /* Main.storyboard */; };
 		EAA353F523341695004A4D9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA353F423341695004A4D9C /* Assets.xcassets */; };
 		EAA353F823341695004A4D9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA353F623341695004A4D9C /* LaunchScreen.storyboard */; };
-		EAA3540323341695004A4D9C /* CanaryApparelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3540223341695004A4D9C /* CanaryApparelTests.swift */; };
-		EAA3540E23341695004A4D9C /* CanaryApparelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3540D23341695004A4D9C /* CanaryApparelUITests.swift */; };
 		EAA3541D233418E8004A4D9C /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAA3541C233418E8004A4D9C /* Pacifico-Regular.ttf */; };
 		EAA354202334D7F5004A4D9C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA3541F2334D7F2004A4D9C /* Default-568h@2x.png */; };
 		EAB29BEF236D03F200F3BA09 /* FaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29BEE236D03F200F3BA09 /* FaveButton.swift */; };
@@ -41,17 +37,19 @@
 		EABAA7062399C18B00052927 /* ProductLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAA7052399C18B00052927 /* ProductLine.swift */; };
 		EABAA70A2399D40100052927 /* CartTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAA7092399D40100052927 /* CartTableVC.swift */; };
 		EABAA70C2399DBDA00052927 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAA70B2399DBDA00052927 /* ProductTableViewCell.swift */; };
+		EAE5A28B239A9F5500F91F73 /* CanaryApparelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE5A28A239A9F5500F91F73 /* CanaryApparelTests.swift */; };
+		EAE5A292239AA10700F91F73 /* CanaryApparelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3540D23341695004A4D9C /* CanaryApparelUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EAA353FF23341695004A4D9C /* PBXContainerItemProxy */ = {
+		EAE5A27E239A9D7A00F91F73 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EAA353E023341692004A4D9C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EAA353E723341693004A4D9C;
 			remoteInfo = CanaryApparel;
 		};
-		EAA3540A23341695004A4D9C /* PBXContainerItemProxy */ = {
+		EAE5A28D239A9F5500F91F73 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EAA353E023341692004A4D9C /* Project object */;
 			proxyType = 1;
@@ -95,10 +93,8 @@
 		EAA353F423341695004A4D9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAA353F723341695004A4D9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAA353F923341695004A4D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAA353FE23341695004A4D9C /* CanaryApparelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanaryApparelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA3540223341695004A4D9C /* CanaryApparelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanaryApparelTests.swift; sourceTree = "<group>"; };
 		EAA3540423341695004A4D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAA3540923341695004A4D9C /* CanaryApparelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanaryApparelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA3540D23341695004A4D9C /* CanaryApparelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanaryApparelUITests.swift; sourceTree = "<group>"; };
 		EAA3540F23341695004A4D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAA3541C233418E8004A4D9C /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
@@ -118,6 +114,12 @@
 		EABAA7052399C18B00052927 /* ProductLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductLine.swift; sourceTree = "<group>"; };
 		EABAA7092399D40100052927 /* CartTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableVC.swift; sourceTree = "<group>"; };
 		EABAA70B2399DBDA00052927 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		EAE5A279239A9D7A00F91F73 /* CanaryApparelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanaryApparelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE5A27B239A9D7A00F91F73 /* CanaryApparelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanaryApparelUITests.swift; sourceTree = "<group>"; };
+		EAE5A27D239A9D7A00F91F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE5A288239A9F5500F91F73 /* CanaryApparelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanaryApparelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE5A28A239A9F5500F91F73 /* CanaryApparelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanaryApparelTests.swift; sourceTree = "<group>"; };
+		EAE5A28C239A9F5500F91F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE6A86B4B5585194259A3AED /* Pods-CanaryApparel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanaryApparel.release.xcconfig"; path = "Target Support Files/Pods-CanaryApparel/Pods-CanaryApparel.release.xcconfig"; sourceTree = "<group>"; };
 		F6613047C2662DF380A8A615 /* Pods_CanaryApparel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanaryApparel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E3CD5A2F1DD232C765E052 /* Pods-CanaryApparelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanaryApparelUITests.release.xcconfig"; path = "Target Support Files/Pods-CanaryApparelUITests/Pods-CanaryApparelUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,19 +134,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAA353FB23341695004A4D9C /* Frameworks */ = {
+		EAE5A276239A9D7A00F91F73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				897DEBBE30D2987708816B12 /* Pods_CanaryApparelTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAA3540623341695004A4D9C /* Frameworks */ = {
+		EAE5A285239A9F5500F91F73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02B6FA22F01373FD78BA0754 /* Pods_CanaryApparelUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +184,8 @@
 				EAA353EA23341693004A4D9C /* CanaryApparel */,
 				EAA3540123341695004A4D9C /* CanaryApparelTests */,
 				EAA3540C23341695004A4D9C /* CanaryApparelUITests */,
+				EAE5A27A239A9D7A00F91F73 /* CanaryApparelUITests */,
+				EAE5A289239A9F5500F91F73 /* CanaryApparelTests */,
 				EAA353E923341693004A4D9C /* Products */,
 				ACA9529C10CD43493CAC4F45 /* Pods */,
 				8D9C428B9296B36374A6A2A4 /* Frameworks */,
@@ -194,8 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				EAA353E823341693004A4D9C /* CanaryApparel.app */,
-				EAA353FE23341695004A4D9C /* CanaryApparelTests.xctest */,
-				EAA3540923341695004A4D9C /* CanaryApparelUITests.xctest */,
+				EAE5A279239A9D7A00F91F73 /* CanaryApparelUITests.xctest */,
+				EAE5A288239A9F5500F91F73 /* CanaryApparelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -300,6 +302,24 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		EAE5A27A239A9D7A00F91F73 /* CanaryApparelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAE5A27B239A9D7A00F91F73 /* CanaryApparelUITests.swift */,
+				EAE5A27D239A9D7A00F91F73 /* Info.plist */,
+			);
+			path = CanaryApparelUITests;
+			sourceTree = "<group>";
+		};
+		EAE5A289239A9F5500F91F73 /* CanaryApparelTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAE5A28A239A9F5500F91F73 /* CanaryApparelTests.swift */,
+				EAE5A28C239A9F5500F91F73 /* Info.plist */,
+			);
+			path = CanaryApparelTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -323,43 +343,41 @@
 			productReference = EAA353E823341693004A4D9C /* CanaryApparel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EAA353FD23341695004A4D9C /* CanaryApparelTests */ = {
+		EAE5A278239A9D7A00F91F73 /* CanaryApparelUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EAA3541523341695004A4D9C /* Build configuration list for PBXNativeTarget "CanaryApparelTests" */;
+			buildConfigurationList = EAE5A280239A9D7A00F91F73 /* Build configuration list for PBXNativeTarget "CanaryApparelUITests" */;
 			buildPhases = (
-				3396BDA3C8A0F2BA3D190633 /* [CP] Check Pods Manifest.lock */,
-				EAA353FA23341695004A4D9C /* Sources */,
-				EAA353FB23341695004A4D9C /* Frameworks */,
-				EAA353FC23341695004A4D9C /* Resources */,
+				EAE5A275239A9D7A00F91F73 /* Sources */,
+				EAE5A276239A9D7A00F91F73 /* Frameworks */,
+				EAE5A277239A9D7A00F91F73 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EAA3540023341695004A4D9C /* PBXTargetDependency */,
-			);
-			name = CanaryApparelTests;
-			productName = CanaryApparelTests;
-			productReference = EAA353FE23341695004A4D9C /* CanaryApparelTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		EAA3540823341695004A4D9C /* CanaryApparelUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EAA3541823341695004A4D9C /* Build configuration list for PBXNativeTarget "CanaryApparelUITests" */;
-			buildPhases = (
-				EFB494D9BBFE65F3EA096E47 /* [CP] Check Pods Manifest.lock */,
-				EAA3540523341695004A4D9C /* Sources */,
-				EAA3540623341695004A4D9C /* Frameworks */,
-				EAA3540723341695004A4D9C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EAA3540B23341695004A4D9C /* PBXTargetDependency */,
+				EAE5A27F239A9D7A00F91F73 /* PBXTargetDependency */,
 			);
 			name = CanaryApparelUITests;
 			productName = CanaryApparelUITests;
-			productReference = EAA3540923341695004A4D9C /* CanaryApparelUITests.xctest */;
+			productReference = EAE5A279239A9D7A00F91F73 /* CanaryApparelUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		EAE5A287239A9F5500F91F73 /* CanaryApparelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAE5A28F239A9F5500F91F73 /* Build configuration list for PBXNativeTarget "CanaryApparelTests" */;
+			buildPhases = (
+				EAE5A284239A9F5500F91F73 /* Sources */,
+				EAE5A285239A9F5500F91F73 /* Frameworks */,
+				EAE5A286239A9F5500F91F73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAE5A28E239A9F5500F91F73 /* PBXTargetDependency */,
+			);
+			name = CanaryApparelTests;
+			productName = CanaryApparelTests;
+			productReference = EAE5A288239A9F5500F91F73 /* CanaryApparelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -367,19 +385,19 @@
 		EAA353E023341692004A4D9C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1030;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "nathan boamah";
 				TargetAttributes = {
 					EAA353E723341693004A4D9C = {
 						CreatedOnToolsVersion = 10.3;
 					};
-					EAA353FD23341695004A4D9C = {
-						CreatedOnToolsVersion = 10.3;
+					EAE5A278239A9D7A00F91F73 = {
+						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = EAA353E723341693004A4D9C;
 					};
-					EAA3540823341695004A4D9C = {
-						CreatedOnToolsVersion = 10.3;
+					EAE5A287239A9F5500F91F73 = {
+						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = EAA353E723341693004A4D9C;
 					};
 				};
@@ -398,8 +416,8 @@
 			projectRoot = "";
 			targets = (
 				EAA353E723341693004A4D9C /* CanaryApparel */,
-				EAA353FD23341695004A4D9C /* CanaryApparelTests */,
-				EAA3540823341695004A4D9C /* CanaryApparelUITests */,
+				EAE5A278239A9D7A00F91F73 /* CanaryApparelUITests */,
+				EAE5A287239A9F5500F91F73 /* CanaryApparelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -418,14 +436,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAA353FC23341695004A4D9C /* Resources */ = {
+		EAE5A277239A9D7A00F91F73 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAA3540723341695004A4D9C /* Resources */ = {
+		EAE5A286239A9F5500F91F73 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -457,28 +475,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3396BDA3C8A0F2BA3D190633 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CanaryApparelTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		59C72C05B555B0B5AE5F92CC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -494,28 +490,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CanaryApparel/Pods-CanaryApparel-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EFB494D9BBFE65F3EA096E47 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CanaryApparelUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -550,34 +524,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAA353FA23341695004A4D9C /* Sources */ = {
+		EAE5A275239A9D7A00F91F73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAA3540323341695004A4D9C /* CanaryApparelTests.swift in Sources */,
+				EAE5A292239AA10700F91F73 /* CanaryApparelUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAA3540523341695004A4D9C /* Sources */ = {
+		EAE5A284239A9F5500F91F73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAA3540E23341695004A4D9C /* CanaryApparelUITests.swift in Sources */,
+				EAE5A28B239A9F5500F91F73 /* CanaryApparelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EAA3540023341695004A4D9C /* PBXTargetDependency */ = {
+		EAE5A27F239A9D7A00F91F73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EAA353E723341693004A4D9C /* CanaryApparel */;
-			targetProxy = EAA353FF23341695004A4D9C /* PBXContainerItemProxy */;
+			targetProxy = EAE5A27E239A9D7A00F91F73 /* PBXContainerItemProxy */;
 		};
-		EAA3540B23341695004A4D9C /* PBXTargetDependency */ = {
+		EAE5A28E239A9F5500F91F73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EAA353E723341693004A4D9C /* CanaryApparel */;
-			targetProxy = EAA3540A23341695004A4D9C /* PBXContainerItemProxy */;
+			targetProxy = EAE5A28D239A9F5500F91F73 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -763,85 +737,81 @@
 			};
 			name = Release;
 		};
-		EAA3541623341695004A4D9C /* Debug */ = {
+		EAE5A281239A9D7A00F91F73 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BD93E6B2D864A5D676F090C /* Pods-CanaryApparelTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CanaryApparelTests/Info.plist;
+				INFOPLIST_FILE = CanaryApparelUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = canary.CanaryApparelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = Canary.CanaryApparelUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanaryApparel.app/CanaryApparel";
+				TEST_TARGET_NAME = CanaryApparel;
 			};
 			name = Debug;
 		};
-		EAA3541723341695004A4D9C /* Release */ = {
+		EAE5A282239A9D7A00F91F73 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 006F4F82E9E0259A90F6F565 /* Pods-CanaryApparelTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CanaryApparelTests/Info.plist;
+				INFOPLIST_FILE = CanaryApparelUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = canary.CanaryApparelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = Canary.CanaryApparelUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanaryApparel.app/CanaryApparel";
+				TEST_TARGET_NAME = CanaryApparel;
 			};
 			name = Release;
 		};
-		EAA3541923341695004A4D9C /* Debug */ = {
+		EAE5A290239A9F5500F91F73 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B9596538CF7012FB93FE33D /* Pods-CanaryApparelUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CanaryApparelUITests/Info.plist;
+				INFOPLIST_FILE = CanaryApparelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = canary.CanaryApparelUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = Canary.CanaryApparelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CanaryApparel;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanaryApparel.app/CanaryApparel";
 			};
 			name = Debug;
 		};
-		EAA3541A23341695004A4D9C /* Release */ = {
+		EAE5A291239A9F5500F91F73 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9E3CD5A2F1DD232C765E052 /* Pods-CanaryApparelUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CanaryApparelUITests/Info.plist;
+				INFOPLIST_FILE = CanaryApparelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = canary.CanaryApparelUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = Canary.CanaryApparelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CanaryApparel;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CanaryApparel.app/CanaryApparel";
 			};
 			name = Release;
 		};
@@ -866,20 +836,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAA3541523341695004A4D9C /* Build configuration list for PBXNativeTarget "CanaryApparelTests" */ = {
+		EAE5A280239A9D7A00F91F73 /* Build configuration list for PBXNativeTarget "CanaryApparelUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EAA3541623341695004A4D9C /* Debug */,
-				EAA3541723341695004A4D9C /* Release */,
+				EAE5A281239A9D7A00F91F73 /* Debug */,
+				EAE5A282239A9D7A00F91F73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAA3541823341695004A4D9C /* Build configuration list for PBXNativeTarget "CanaryApparelUITests" */ = {
+		EAE5A28F239A9F5500F91F73 /* Build configuration list for PBXNativeTarget "CanaryApparelTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EAA3541923341695004A4D9C /* Debug */,
-				EAA3541A23341695004A4D9C /* Release */,
+				EAE5A290239A9F5500F91F73 /* Debug */,
+				EAE5A291239A9F5500F91F73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
