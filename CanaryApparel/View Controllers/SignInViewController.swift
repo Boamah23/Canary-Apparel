@@ -50,7 +50,7 @@ class SignInViewController: UIViewController {
     
     @IBAction func loginTapped(_ sender: Any) {
 
-    
+        // Create cleaned versions of the data
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
@@ -70,7 +70,7 @@ class SignInViewController: UIViewController {
             }
             
         }
-        
+        //function to display error
         func showError(_ sender: Any) {
             let alert = UIAlertController(title: "ERROR", message: "Something isn't right, try again", preferredStyle: .alert)
             let action1 = UIAlertAction(title: "Cancel", style: .default){ (action) in
