@@ -9,7 +9,10 @@
 import UIKit
 import FaveButton
 
-
+/*
+ favourite button function found at https://github.com/xhamr/fave-button
+ GitHub. (2019). xhamr/fave-button. [online] Available at: https://github.com/xhamr/fave-button [Accessed 6 Nov. 2019].
+ */
 func color(_ rgbColor: Int) -> UIColor{
     return UIColor(
         red:   CGFloat((rgbColor & 0xFF0000) >> 16) / 255.0,
