@@ -27,8 +27,15 @@ class CanaryApparelUITests: XCTestCase {
     }
 
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        app.tabBars.buttons["Search"].tap()
+        app.scrollViews.otherElements.containing(.image, identifier:"holiday").children(matching: .button).element(boundBy: 0).tap()
+        app.collectionViews.cells.otherElements.containing(.staticText, identifier:"£26.00").children(matching: .image).element.tap()
+        app.textFields["Select size"].tap()
+        app/*@START_MENU_TOKEN@*/.pickerWheels["Extra Small - XS"]/*[[".pickers.pickerWheels[\"Extra Small - XS\"]",".pickerWheels[\"Extra Small - XS\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.toolbars["Toolbar"].buttons["Done"].tap()
+        
     }
 
 }
