@@ -20,7 +20,8 @@ class ProductTableViewCell: UITableViewCell {
             self.update()
         }
     }
-    
+   
+//append to image view and title
     func update() {
         productImageView.image = product?.image
         productLabel.text = product?.title
