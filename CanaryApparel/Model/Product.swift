@@ -8,12 +8,13 @@
 
 import Foundation
 import UIKit
-
+//product class
 
 class Product {
+    //declare variables
     var image: UIImage
     var title: String
-    
+    //initialise instances
     init(titled: String, imageName: String){
         self.title = titled
         if let image = UIImage(named: imageName){
