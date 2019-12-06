@@ -38,7 +38,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         
 
-        
+        //text decoraters
    
         firstNameTextField.attributedPlaceholder = NSAttributedString(string: "First name", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         
@@ -69,15 +69,6 @@ class SignUpViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     @IBAction func registerTapped(_ sender: Any) {
         // Validate the fields
         let error = fieldValidation()
@@ -127,7 +118,7 @@ class SignUpViewController: UIViewController {
             
         }
     }
-    
+    //function to display error
     func showError(_ sender: Any) {
         let alert = UIAlertController(title: "ERROR", message: "Something isn't right, try again", preferredStyle: .alert)
         let action1 = UIAlertAction(title: "Cancel", style: .default){ (action) in
