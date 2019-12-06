@@ -74,6 +74,11 @@ class DetailViewController: UIViewController, FaveButtonDelegate {
         
     }
     
+    @IBAction func addtobasketButtonTapped(sender: AnyObject){
+
+        
+    }
+    
     
     @IBAction func sharePressed(_ sender: Any) {
         let activityVC = UIActivityViewController(activityItems: [img, priceLbl,descriptionLbl], applicationActivities: nil)
