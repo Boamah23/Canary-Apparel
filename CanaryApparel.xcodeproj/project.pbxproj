@@ -10,14 +10,11 @@
 		02B6FA22F01373FD78BA0754 /* Pods_CanaryApparelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB9EC810EBFC5886D6BA8AE /* Pods_CanaryApparelUITests.framework */; };
 		780D2F275979AAB22CFC3681 /* Pods_CanaryApparel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6613047C2662DF380A8A615 /* Pods_CanaryApparel.framework */; };
 		897DEBBE30D2987708816B12 /* Pods_CanaryApparelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294A955D937BFA097E7700D6 /* Pods_CanaryApparelTests.framework */; };
-		EA044251233E340F0041C132 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA044250233E340F0041C132 /* Constants.swift */; };
 		EA044253233E7FA10041C132 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA044252233E7FA10041C132 /* GoogleService-Info.plist */; };
 		EA06B2A923420C3600143A59 /* ProductGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06B2A823420C3600143A59 /* ProductGalleryViewController.swift */; };
 		EA3B71952336CCCA0081DB65 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B71942336CCCA0081DB65 /* SignUpViewController.swift */; };
 		EA3B71972336CCE60081DB65 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B71962336CCE60081DB65 /* SignInViewController.swift */; };
 		EA3B71992336CCFF0081DB65 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B71982336CCFF0081DB65 /* AccountViewController.swift */; };
-		EA3B719B2336CD190081DB65 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B719A2336CD190081DB65 /* CartViewController.swift */; };
-		EA3B719D2336CD380081DB65 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B719C2336CD380081DB65 /* FavouritesViewController.swift */; };
 		EA83F60823676D16002E20F1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83F60723676D16002E20F1 /* CollectionViewCell.swift */; };
 		EA83F60A2368E3A4002E20F1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA83F6092368E3A4002E20F1 /* DetailViewController.swift */; };
 		EAA353EC23341693004A4D9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA353EB23341693004A4D9C /* AppDelegate.swift */; };
@@ -38,6 +35,12 @@
 		EAB29C00236D046100F3BA09 /* Constraints+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29BFC236D045E00F3BA09 /* Constraints+.swift */; };
 		EAB29C01236D046100F3BA09 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29BFD236D046000F3BA09 /* Easing.swift */; };
 		EAB29C02236D046100F3BA09 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB29BFE236D046100F3BA09 /* Geometry.swift */; };
+		EABAA6F023989C1F00052927 /* FaveButton.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EABAA6EE23989BDF00052927 /* FaveButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EABAA6F323993BE900052927 /* CanaryApparel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EABAA6F123993BE900052927 /* CanaryApparel.xcdatamodeld */; };
+		EABAA7042399BF7900052927 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAA7032399BF7900052927 /* Product.swift */; };
+		EABAA7062399C18B00052927 /* ProductLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAA7052399C18B00052927 /* ProductLine.swift */; };
+		EABAA70A2399D40100052927 /* CartTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAA7092399D40100052927 /* CartTableVC.swift */; };
+		EABAA70C2399DBDA00052927 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABAA70B2399DBDA00052927 /* ProductTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EABAA6E8239898CF00052927 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EABAA6F023989C1F00052927 /* FaveButton.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		006F4F82E9E0259A90F6F565 /* Pods-CanaryApparelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanaryApparelTests.release.xcconfig"; path = "Target Support Files/Pods-CanaryApparelTests/Pods-CanaryApparelTests.release.xcconfig"; sourceTree = "<group>"; };
 		1B9596538CF7012FB93FE33D /* Pods-CanaryApparelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanaryApparelUITests.debug.xcconfig"; path = "Target Support Files/Pods-CanaryApparelUITests/Pods-CanaryApparelUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,14 +80,11 @@
 		4AD3B56F622630458FED659B /* Pods-CanaryApparel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanaryApparel.debug.xcconfig"; path = "Target Support Files/Pods-CanaryApparel/Pods-CanaryApparel.debug.xcconfig"; sourceTree = "<group>"; };
 		5BD93E6B2D864A5D676F090C /* Pods-CanaryApparelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanaryApparelTests.debug.xcconfig"; path = "Target Support Files/Pods-CanaryApparelTests/Pods-CanaryApparelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BAB9EC810EBFC5886D6BA8AE /* Pods_CanaryApparelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanaryApparelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA044250233E340F0041C132 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EA044252233E7FA10041C132 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA06B2A823420C3600143A59 /* ProductGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGalleryViewController.swift; sourceTree = "<group>"; };
 		EA3B71942336CCCA0081DB65 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EA3B71962336CCE60081DB65 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		EA3B71982336CCFF0081DB65 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
-		EA3B719A2336CD190081DB65 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
-		EA3B719C2336CD380081DB65 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		EA83F60723676D16002E20F1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EA83F6092368E3A4002E20F1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EAA353E823341693004A4D9C /* CanaryApparel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanaryApparel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +112,12 @@
 		EAB29BFD236D046000F3BA09 /* Easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Easing.swift; sourceTree = "<group>"; };
 		EAB29BFE236D046100F3BA09 /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
 		EAB29C04236D165D00F3BA09 /* FaveButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaveButton.h; sourceTree = "<group>"; };
+		EABAA6EE23989BDF00052927 /* FaveButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FaveButton.framework; path = "../../Library/Developer/Xcode/DerivedData/CanaryApparel-aydcuqcbzlxilagbmppmbeethqee/Build/Products/Debug-iphonesimulator/FaveButton/FaveButton.framework"; sourceTree = "<group>"; };
+		EABAA6F223993BE900052927 /* CanaryApparel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CanaryApparel.xcdatamodel; sourceTree = "<group>"; };
+		EABAA7032399BF7900052927 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		EABAA7052399C18B00052927 /* ProductLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductLine.swift; sourceTree = "<group>"; };
+		EABAA7092399D40100052927 /* CartTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableVC.swift; sourceTree = "<group>"; };
+		EABAA70B2399DBDA00052927 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		EE6A86B4B5585194259A3AED /* Pods-CanaryApparel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanaryApparel.release.xcconfig"; path = "Target Support Files/Pods-CanaryApparel/Pods-CanaryApparel.release.xcconfig"; sourceTree = "<group>"; };
 		F6613047C2662DF380A8A615 /* Pods_CanaryApparel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanaryApparel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E3CD5A2F1DD232C765E052 /* Pods-CanaryApparelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanaryApparelUITests.release.xcconfig"; path = "Target Support Files/Pods-CanaryApparelUITests/Pods-CanaryApparelUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +154,7 @@
 		8D9C428B9296B36374A6A2A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EABAA6EE23989BDF00052927 /* FaveButton.framework */,
 				F6613047C2662DF380A8A615 /* Pods_CanaryApparel.framework */,
 				294A955D937BFA097E7700D6 /* Pods_CanaryApparelTests.framework */,
 				BAB9EC810EBFC5886D6BA8AE /* Pods_CanaryApparelUITests.framework */,
@@ -183,6 +203,7 @@
 		EAA353EA23341693004A4D9C /* CanaryApparel */ = {
 			isa = PBXGroup;
 			children = (
+				EABAA7022399BF2000052927 /* Model */,
 				EAA353EB23341693004A4D9C /* AppDelegate.swift */,
 				EADDF8BE2336D36F00DE3231 /* View Controllers */,
 				EAA3541B233418B7004A4D9C /* Fonts */,
@@ -191,6 +212,7 @@
 				EA044252233E7FA10041C132 /* GoogleService-Info.plist */,
 				EAA353F623341695004A4D9C /* LaunchScreen.storyboard */,
 				EAA353F923341695004A4D9C /* Info.plist */,
+				EABAA6F123993BE900052927 /* CanaryApparel.xcdatamodeld */,
 			);
 			path = CanaryApparel;
 			sourceTree = "<group>";
@@ -252,20 +274,28 @@
 			path = FaveButton;
 			sourceTree = "<group>";
 		};
+		EABAA7022399BF2000052927 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EABAA7032399BF7900052927 /* Product.swift */,
+				EABAA7052399C18B00052927 /* ProductLine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EADDF8BE2336D36F00DE3231 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				EAA353ED23341693004A4D9C /* HomeViewController.swift */,
 				EA3B71942336CCCA0081DB65 /* SignUpViewController.swift */,
-				EA044250233E340F0041C132 /* Constants.swift */,
 				EA3B71962336CCE60081DB65 /* SignInViewController.swift */,
 				EA06B2A823420C3600143A59 /* ProductGalleryViewController.swift */,
 				EAA353EF23341693004A4D9C /* SearchViewController.swift */,
-				EA3B719C2336CD380081DB65 /* FavouritesViewController.swift */,
-				EA3B719A2336CD190081DB65 /* CartViewController.swift */,
 				EA3B71982336CCFF0081DB65 /* AccountViewController.swift */,
 				EA83F60723676D16002E20F1 /* CollectionViewCell.swift */,
 				EA83F6092368E3A4002E20F1 /* DetailViewController.swift */,
+				EABAA7092399D40100052927 /* CartTableVC.swift */,
+				EABAA70B2399DBDA00052927 /* ProductTableViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -282,6 +312,7 @@
 				EAA353E523341693004A4D9C /* Frameworks */,
 				EAA353E623341693004A4D9C /* Resources */,
 				59C72C05B555B0B5AE5F92CC /* [CP] Embed Pods Frameworks */,
+				EABAA6E8239898CF00052927 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -494,25 +525,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA3B719D2336CD380081DB65 /* FavouritesViewController.swift in Sources */,
 				EAB29C01236D046100F3BA09 /* Easing.swift in Sources */,
 				EAB29BFF236D046100F3BA09 /* Init.swift in Sources */,
 				EAA353F023341693004A4D9C /* SearchViewController.swift in Sources */,
 				EAB29BF1236D03F400F3BA09 /* FaveIcon.swift in Sources */,
+				EABAA7042399BF7900052927 /* Product.swift in Sources */,
+				EABAA6F323993BE900052927 /* CanaryApparel.xcdatamodeld in Sources */,
 				EAB29C00236D046100F3BA09 /* Constraints+.swift in Sources */,
 				EAA353EC23341693004A4D9C /* AppDelegate.swift in Sources */,
 				EA83F60A2368E3A4002E20F1 /* DetailViewController.swift in Sources */,
+				EABAA70C2399DBDA00052927 /* ProductTableViewCell.swift in Sources */,
 				EAB29BF6236D043400F3BA09 /* Ring.swift in Sources */,
 				EAB29C02236D046100F3BA09 /* Geometry.swift in Sources */,
 				EAA353EE23341693004A4D9C /* HomeViewController.swift in Sources */,
 				EA06B2A923420C3600143A59 /* ProductGalleryViewController.swift in Sources */,
 				EA3B71972336CCE60081DB65 /* SignInViewController.swift in Sources */,
+				EABAA7062399C18B00052927 /* ProductLine.swift in Sources */,
 				EA3B71992336CCFF0081DB65 /* AccountViewController.swift in Sources */,
 				EAB29BF4236D043000F3BA09 /* Spark.swift in Sources */,
-				EA3B719B2336CD190081DB65 /* CartViewController.swift in Sources */,
 				EAB29BEF236D03F200F3BA09 /* FaveButton.swift in Sources */,
 				EA3B71952336CCCA0081DB65 /* SignUpViewController.swift in Sources */,
-				EA044251233E340F0041C132 /* Constants.swift in Sources */,
+				EABAA70A2399D40100052927 /* CartTableVC.swift in Sources */,
 				EA83F60823676D16002E20F1 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -691,6 +724,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MWTLRAB43B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CanaryApparel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -710,6 +747,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MWTLRAB43B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CanaryApparel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -844,6 +885,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EABAA6F123993BE900052927 /* CanaryApparel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EABAA6F223993BE900052927 /* CanaryApparel.xcdatamodel */,
+			);
+			currentVersion = EABAA6F223993BE900052927 /* CanaryApparel.xcdatamodel */;
+			path = CanaryApparel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EAA353E023341692004A4D9C /* Project object */;
 }
