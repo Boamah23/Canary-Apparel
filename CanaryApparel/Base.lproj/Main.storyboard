@@ -148,25 +148,25 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summer Apparel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdn-oC-ley">
-                                                <rect key="frame" x="248.66666666666669" y="76.333333333333329" width="142.66666666666669" height="22.333333333333329"/>
+                                                <rect key="frame" x="248.66666666666663" y="65" width="137.33333333333337" height="33.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="19"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accessories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eu-zn-Ehb">
-                                                <rect key="frame" x="26.666666666666664" y="318.66666666666669" width="103.33333333333334" height="22.333333333333314"/>
+                                                <rect key="frame" x="40.333333333333336" y="307.33333333333331" width="89.666666666666657" height="33.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="19"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winter Apparel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37U-Uq-9zV">
-                                                <rect key="frame" x="46.333333333333336" y="562.66666666666663" width="125.66666666666666" height="22.333333333333371"/>
+                                                <rect key="frame" x="40" y="551.33333333333337" width="132" height="33.666666666666629"/>
                                                 <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="19"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spring Apparel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnm-kH-a2x">
-                                                <rect key="frame" x="262" y="797.66666666666663" width="126.33333333333331" height="22.333333333333371"/>
+                                                <rect key="frame" x="262" y="786.33333333333337" width="124" height="33.666666666666629"/>
                                                 <fontDescription key="fontDescription" name="Pacifico-Regular" family="Pacifico" pointSize="19"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -312,7 +312,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="canary1" translatesAutoresizingMaskIntoConstraints="NO" id="NiG-05-ajL">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000045"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <viewLayoutGuide key="safeArea" id="Knl-wX-DGJ"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yh-7J-TmD">
